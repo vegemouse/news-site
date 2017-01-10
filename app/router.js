@@ -7,6 +7,10 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('article', {path: 'article/:article_id'});
+  this.route('engadget');
+  this.route('associated-press');
+  this.route('time');
+  this.route('hacker-news');
 });
 
 export default Router;

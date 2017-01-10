@@ -1,31 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Quicksand');
+
 h1 {
   font-size: 4em;
 }
 
 .main {
-
-
-  // width: 45%;
-  // margin: 0 auto;
-  @media screen and (max-width: 750px) {
-    width: 100%;
+  padding: 120px 0;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
   }
 }
 
 .article {
-  margin: 0 auto;
-  width: 80%;
+  width: 390px;
+  float: left;
   background: white;
   margin-top: 30px;
   display: flex;
-  transition: all 250ms ease-in-out;
-  & img {
+  flex-direction: column;
+  transition: all 200ms ease-in-out;
+  height: 550px;
+  img {
     flex: 1 50%;
-    width: 50%;
-    max-height: 280px;
+    width: 100%;
+    max-height: 500px;
     object-fit: cover;
   }
-  & .content {
+  .content {
     flex: 1 50%;
     order: 1;
     padding: 2%;
@@ -35,6 +44,38 @@ h1 {
     }
   }
   &:hover {
-    filter: opacity(80%);
+    filter: opacity(50%);
   }
+}
+
+.ember-view:nth-of-type(1n+4) .article {
+  width: 1200px;
+  margin-top: 30px;
+  transition: all 200ms ease-in-out;
+  flex-direction: row;
+  height: 100%;
+  img {
+    flex: 1 50%;
+    width: 50%;
+    max-height: 280px;
+    object-fit: cover;
+  }
+  .content {
+    flex: 1 50%;
+    order: 1;
+    padding: 2%;
+    h3 {
+      font-size: 1.8em;
+      margin: 20px 0;
+    }
+  }
+  &:hover {
+    filter: opacity(50%);
+  }
+
+}
+
+.ember-view:nth-of-type(2) .article {
+  margin: 30px 15px 0 15px;
+
 }
