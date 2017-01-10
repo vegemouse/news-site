@@ -1,0 +1,40 @@
+h1 {
+  font-size: 4em;
+}
+
+.main {
+
+
+  // width: 45%;
+  // margin: 0 auto;
+  @media screen and (max-width: 750px) {
+    width: 100%;
+  }
+}
+
+.article {
+  margin: 0 auto;
+  width: 80%;
+  background: white;
+  margin-top: 30px;
+  display: flex;
+  transition: all 250ms ease-in-out;
+  & img {
+    flex: 1 50%;
+    width: 50%;
+    max-height: 280px;
+    object-fit: cover;
+  }
+  & .content {
+    flex: 1 50%;
+    order: 1;
+    padding: 2%;
+    h3 {
+      font-size: 1.8em;
+      margin: 20px 0;
+    }
+  }
+  &:hover {
+    filter: opacity(80%);
+  }
+}
