@@ -28,6 +28,7 @@ h1 {
   flex-direction: column;
   transition: all 200ms ease-in-out;
   height: 550px;
+  border: 5px solid transparent;
   filter: opacity(0.9);
   transform: scale(1);
   img {
@@ -44,8 +45,12 @@ h1 {
       font-size: 1.8em;
       margin: 20px 0;
     }
+    p {
+      color: rgb(52, 69, 78);
+    }
   }
   &:hover {
+    border: 5px solid rgba(136, 196, 214, 0.54);
     transform: scale(1.05);
     filter: opacity(1);
   }
