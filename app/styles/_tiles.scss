@@ -28,14 +28,16 @@ h1 {
   flex-direction: column;
   transition: all 200ms ease-in-out;
   height: 550px;
+  filter: opacity(0.9);
+  transform: scale(1);
   img {
-    flex: 1 50%;
+    flex-basis: 50%;
     width: 100%;
     max-height: 500px;
     object-fit: cover;
   }
   .content {
-    flex: 1 50%;
+    flex-basis: 50%;
     order: 1;
     padding: 2%;
     h3 {
@@ -44,7 +46,8 @@ h1 {
     }
   }
   &:hover {
-    filter: opacity(50%);
+    transform: scale(1.05);
+    filter: opacity(1);
   }
 }
 
@@ -68,9 +71,6 @@ h1 {
       font-size: 1.8em;
       margin: 20px 0;
     }
-  }
-  &:hover {
-    filter: opacity(50%);
   }
 
 }
